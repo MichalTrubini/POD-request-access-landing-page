@@ -305,6 +305,16 @@ body {
   opacity: 0.5;
 }
 
+.email-message {
+  color: #FB3E3E;
+  text-align: left;
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  padding-left: 3.2rem;
+  visibility: hidden;
+  height: 13px;
+}
+
 @media screen and (min-width: 768px) {
   body {
     background: url(../assets/tablet/image-host.jpg) no-repeat top right, url(../assets/desktop/bg-pattern-dots.svg) no-repeat bottom left 30px;
@@ -327,6 +337,7 @@ body {
     background: #121725;
     margin-top: 15.2rem;
     padding-top: 9.3rem;
+    padding-bottom: 0.6rem;
     width: 63.5rem;
   }
   .content__heading {
@@ -345,7 +356,7 @@ body {
     position: relative;
     width: 427px;
     margin-top: 4rem;
-    margin-bottom: 6.4rem;
+    margin-bottom: 4.3rem;
   }
   .email-form input {
     height: 56px;
