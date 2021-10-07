@@ -11,20 +11,27 @@ body {
     text-align:center;
 }
 
+.main {
+    padding-top:6.2rem;
+}
+
+.container {
+    padding: 0 2.4rem;
+}
+
 .site-logo {
     display:block;
-    margin: 6.2rem auto 5.7rem;
+    margin: 0rem auto 5.7rem;
 }
 
 .content {
-    padding:0 2.4rem;
 
     &__heading {
         font-size:2.6rem;
         line-height: 3.8rem;
         color:$color-heading-secondary;
         text-transform: uppercase;
-        font-weight:400;
+        font-weight:300;
     }
 
     &__heading--accent {
@@ -81,7 +88,7 @@ body {
 }
 
 .email-form input {
-    background:$backgrond-form;
+    background:$background-form;
 }
 
 .email-form button {
@@ -102,7 +109,102 @@ body {
 @media screen and (min-width:768px) {
 
     body {
-        background: url(../assets/tablet/image-host.jpg) no-repeat;
-        background-size: 100%;
+        
+        background: url(../assets/tablet/image-host.jpg) no-repeat top right, url(../assets/desktop/bg-pattern-dots.svg) no-repeat bottom left 30px;
+        background-size: auto;
+        background-color: $background-body;
+        background-blend-mode: normal;
+        text-align: left;
+        height:100vh;
+
+    }
+
+    .main {
+        padding-top:5rem;
+    }
+
+    .site-logo {
+        margin:0rem 0;
+    }
+
+    .container {
+        padding-left: 3.9rem;
+    }
+    .content {
+        background: $background-body;
+        margin-top:15.2rem;
+        padding-top:9.3rem;
+        width:63.5rem;
+
+        &__heading {
+            font-size:4.8rem;
+            line-height: 5.6rem;
+            font-weight:300;
+        }
+
+        &__text {
+            width:44.5rem;
+            font-size:1.8rem;
+            line-height:2.8rem;
+            margin-top: 3.2rem;
+            margin-bottom:0;
+        }
+    }
+
+    .email-form {
+        position:relative;
+        width:427px;
+        margin-top:4rem;
+        margin-bottom:6.4rem;
+    }
+
+    .email-form input {
+        height:56px;
+    }
+
+    .email-form button {
+        position:absolute;
+        width:16.2rem;
+        top:-11px;
+        right:5px;
+        height:46px;
+    }
+
+    .podcasts {
+        width:53.6rem;
+    }
+
+    .podcasts-form {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .spotify-icon {
+        width:96px;
+        height:29px;
+    }
+    
+    .apple-icon {
+        width:78px;
+        height:29px;
+    }
+    
+    .google-icon {
+        width:125px;
+        height:18px;
+    }
+    
+    .pocket-icon {
+        width:129px;
+        height:26px;
+    }
+}
+
+@media screen and (min-height: 768px) and (min-width:1024px){
+    body {
+        background: url(../assets/tablet/image-host.jpg) no-repeat top right, url(../assets/desktop/bg-pattern-dots.svg) no-repeat bottom left 40px;
+        background-size: auto;
+        background-color: $background-body;
+        background-blend-mode: normal;
     }
 }
