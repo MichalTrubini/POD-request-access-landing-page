@@ -23,13 +23,19 @@ form.addEventListener('submit', function (event) {
     if(!email.validity.valid) {
       // If it isn't, we display an appropriate error message
       showErrorEmail();
+      console.log('what');
       // Then we prevent the form from being sent by canceling the event
       event.preventDefault();
     }
 });
 
 function showErrorEmail() {
-    if(email.validity.typeMismatch) {
+    if(email.validity.valueMissing) {
+        // If the field is empty,
+        // display the following error message.
+        emailError.textContent = 'Oops! Please add your email';
+        emailError.style.visibility = 'visible';
+    } else if(email.validity.typeMismatch) {
     // If the field doesn't contain an email address,
     // display the following error message.
     emailError.textContent = 'Oops! Please check your email';
