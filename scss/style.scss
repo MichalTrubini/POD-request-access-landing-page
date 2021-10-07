@@ -24,6 +24,10 @@ body {
     margin: 0rem auto 5.7rem;
 }
 
+.image-dots {
+    display: none;
+}
+
 .content {
 
     &__heading {
@@ -85,23 +89,30 @@ body {
     border-radius: 2.8rem;
     height:4.6rem;
     border:none;
+    font-size:1.4rem;
 }
 
 .email-form input {
     background:$background-form;
+    outline:none;
+    color:white;
+    padding-left:3.2rem;
 }
 
 .email-form button {
     background:$background-button;
-    font-size:1.4rem;
     color:rgb(0, 0, 0);
     font-weight: 900;
     margin-top:1.6rem;
 }
 
+.email-form button:hover {
+    cursor:pointer;
+    background:$background-button-active;
+}
+
 ::placeholder {
     font-size: 1.4rem;
-    padding-left:3.2rem;
     color:$White;
     opacity:0.5;
 }
@@ -206,5 +217,63 @@ body {
         background-size: auto;
         background-color: $background-body;
         background-blend-mode: normal;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    body {
+        background-image:none;
+        background-color: $background-body;
+        background-blend-mode: normal;
+        text-align: left;
+        height:100vh;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main {
+        background: url(../assets/desktop/image-host.jpg) no-repeat top right;
+        background-size: auto;
+        width:144rem;
+        padding-top:0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .container {
+        padding:0;
+        position:relative;
+        width:127.5rem;
+/*         height:69rem;
+        background:  url(../assets/desktop/bg-pattern-dots.svg) no-repeat bottom right; */
+    }
+
+    .image-dots {
+        display:block;
+        position:absolute;
+        z-index: 99;
+        bottom:10.8rem;
+    }
+
+    .content {
+        margin-top:7.5rem;
+        padding-top:8.8rem;
+        width:72.3rem;
+
+        &__heading {
+            font-size: 5.2rem;
+            line-height: 6.2rem;
+        }
+
+        &__text {
+            margin-top:2.4rem;
+        }
+    }
+
+    .site-logo {
+        position: relative;
+        top: -23px;
     }
 }

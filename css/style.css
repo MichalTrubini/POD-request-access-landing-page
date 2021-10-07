@@ -186,6 +186,10 @@ body {
   margin: 0rem auto 5.7rem;
 }
 
+.image-dots {
+  display: none;
+}
+
 .content__heading {
   font-size: 2.6rem;
   line-height: 3.8rem;
@@ -255,44 +259,48 @@ body {
   border-radius: 2.8rem;
   height: 4.6rem;
   border: none;
+  font-size: 1.4rem;
 }
 
 .email-form input {
   background: #2C344B;
+  outline: none;
+  color: white;
+  padding-left: 3.2rem;
 }
 
 .email-form button {
   background: #54E6AF;
-  font-size: 1.4rem;
   color: black;
   font-weight: 900;
   margin-top: 1.6rem;
 }
 
+.email-form button:hover {
+  cursor: pointer;
+  background: #B3FFE2;
+}
+
 ::-webkit-input-placeholder {
   font-size: 1.4rem;
-  padding-left: 3.2rem;
   color: #FFFFFF;
   opacity: 0.5;
 }
 
 :-ms-input-placeholder {
   font-size: 1.4rem;
-  padding-left: 3.2rem;
   color: #FFFFFF;
   opacity: 0.5;
 }
 
 ::-ms-input-placeholder {
   font-size: 1.4rem;
-  padding-left: 3.2rem;
   color: #FFFFFF;
   opacity: 0.5;
 }
 
 ::placeholder {
   font-size: 1.4rem;
-  padding-left: 3.2rem;
   color: #FFFFFF;
   opacity: 0.5;
 }
@@ -385,6 +393,69 @@ body {
     background-size: auto;
     background-color: #121725;
     background-blend-mode: normal;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: none;
+    background-color: #121725;
+    background-blend-mode: normal;
+    text-align: left;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main {
+    background: url(../assets/desktop/image-host.jpg) no-repeat top right;
+    background-size: auto;
+    width: 144rem;
+    padding-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container {
+    padding: 0;
+    position: relative;
+    width: 127.5rem;
+    /*         height:69rem;
+        background:  url(../assets/desktop/bg-pattern-dots.svg) no-repeat bottom right; */
+  }
+  .image-dots {
+    display: block;
+    position: absolute;
+    z-index: 99;
+    bottom: 10.8rem;
+  }
+  .content {
+    margin-top: 7.5rem;
+    padding-top: 8.8rem;
+    width: 72.3rem;
+  }
+  .content__heading {
+    font-size: 5.2rem;
+    line-height: 6.2rem;
+  }
+  .content__text {
+    margin-top: 2.4rem;
+  }
+  .site-logo {
+    position: relative;
+    top: -23px;
   }
 }
 /*# sourceMappingURL=style.css.map */
