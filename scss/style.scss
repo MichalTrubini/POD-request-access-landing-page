@@ -1,0 +1,108 @@
+@import 'settings','variables','normalize';
+
+body {
+    background:url(../assets/mobile/image-host.jpg) no-repeat;
+    background-size:cover;
+    background-color:#2b2f3a;
+    background-blend-mode: multiply;
+    color:$color-text-main;
+    font-family: 'Chivo', sans-serif;
+    font-weight:400;
+    text-align:center;
+}
+
+.site-logo {
+    display:block;
+    margin: 6.2rem auto 5.7rem;
+}
+
+.content {
+    padding:0 2.4rem;
+
+    &__heading {
+        font-size:2.6rem;
+        line-height: 3.8rem;
+        color:$color-heading-secondary;
+        text-transform: uppercase;
+        font-weight:400;
+    }
+
+    &__heading--accent {
+        color:$color-heading-primary;
+    }
+
+    &__text {
+        color:$color-text-main;
+        font-size:1.5rem;
+        line-height: 2.5rem;
+        margin:1.6rem 0 3.3rem;
+        font-weight:300;
+    }
+}
+
+.podcasts {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color:$color-text-main;
+}
+
+.spotify-icon {
+    width:5.6rem;
+    height:1.7rem;
+}
+
+.apple-icon {
+    width:4.5rem;
+    height:1.7rem;
+}
+
+.google-icon {
+    width:7.3rem;
+    height:1.1rem;
+}
+
+.pocket-icon {
+    width:7.7rem;
+    height:1.5rem;
+}
+
+.email-form {
+    display:flex;
+    flex-direction: column;
+    margin-top:4.8rem;
+}
+
+.email-form input,
+.email-form button {
+    border-radius: 2.8rem;
+    height:4.6rem;
+    border:none;
+}
+
+.email-form input {
+    background:$backgrond-form;
+}
+
+.email-form button {
+    background:$background-button;
+    font-size:1.4rem;
+    color:rgb(0, 0, 0);
+    font-weight: 900;
+    margin-top:1.6rem;
+}
+
+::placeholder {
+    font-size: 1.4rem;
+    padding-left:3.2rem;
+    color:$White;
+    opacity:0.5;
+}
+ 
+@media screen and (min-width:768px) {
+
+    body {
+        background: url(../assets/tablet/image-host.jpg) no-repeat;
+        background-size: 100%;
+    }
+}
