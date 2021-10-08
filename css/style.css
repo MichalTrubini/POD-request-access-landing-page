@@ -322,7 +322,7 @@ body {
     background-color: #121725;
     background-blend-mode: normal;
     text-align: left;
-    height: 100vh;
+    min-height: 100vh;
   }
   .main {
     padding-top: 5rem;
@@ -413,7 +413,7 @@ body {
     background-color: #121725;
     background-blend-mode: normal;
     text-align: left;
-    height: 100vh;
+    min-height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

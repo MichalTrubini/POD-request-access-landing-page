@@ -16,7 +16,7 @@
 
   <main class="main">
     <div class="container">
-      <img src="assets/desktop/logo.svg" alt="site logo" class="site-logo">
+      <img src="assets/desktop/logo.svg" alt="pod" class="site-logo">
 
       <section class="content">
 
@@ -28,15 +28,15 @@
         </p>
         <div class="podcasts-form">
           <div class="podcasts">
-            <img src="assets/desktop/spotify.svg" alt="link spotify" class="spotify-icon">
-            <img src="assets/desktop/apple-podcast.svg" alt="link to apple podcast" class="apple-icon">
-            <img src="assets/desktop/google-podcasts.svg" alt="link to google podcasts" class="google-icon">
-            <img src="assets/desktop/pocket-casts.svg" alt="link to pocket casts" class="pocket-icon">
+            <img src="assets/desktop/spotify.svg" alt="spotify" class="spotify-icon">
+            <img src="assets/desktop/apple-podcast.svg" alt="apple podcast" class="apple-icon">
+            <img src="assets/desktop/google-podcasts.svg" alt="google podcasts" class="google-icon">
+            <img src="assets/desktop/pocket-casts.svg" alt="pocket casts" class="pocket-icon">
           </div>
           <form novalidate class="email-form" >
-            <input type="email" placeholder="Email address" id="email" required>
+            <input type="email" placeholder="Email address" id="email" required aria-required="true" aria-invalid="false">
             <p class="email-message" id="email-error"></p>
-            <button>Request access</button>
+            <button type="submit">Request access</button>
           </form>
         </div>
       </section>

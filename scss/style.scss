@@ -136,7 +136,7 @@ body {
         background-color: $background-body;
         background-blend-mode: normal;
         text-align: left;
-        height:100vh;
+        min-height:100vh;
 
     }
 
@@ -237,7 +237,7 @@ body {
         background-color: $background-body;
         background-blend-mode: normal;
         text-align: left;
-        height:100vh;
+        min-height:100vh;
         display:flex;
         align-items: center;
         justify-content: center;
